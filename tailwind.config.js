@@ -5,20 +5,15 @@ module.exports = {
   theme: {
     extend: {},
     screens: {
-			xl: { max: "1279px" },
-			// => @media (max-width: 1279px) { ... }
-
-			lg: { max: "1023px" },
-			// => @media (max-width: 1023px) { ... }
-
-			md: { max: "767px" },
-			// => @media (max-width: 767px) { ... }
-
-			sm: { max: "639px" },
-			// => @media (max-width: 639px) { ... }
-		},
+			xl: { max: "1280px" },
+			lg: { max: "1024px" },
+			md: { max: "768px" },
+			sm: { max: "640px" },
+      w1320: { max: "1320px" },
+    },
     colors: {
       maintext: "#1C1C33",
+      maintextwhite: "#F6F6F8",
       mainbggreen: "#57D9A6",
       mainbgblack: "#23233B"
     }
