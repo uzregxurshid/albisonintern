@@ -4,16 +4,7 @@ import Twitter from '../assets/images/footer/twitter.svg';
 import Instagram from '../assets/images/footer/instagram.svg';
 import Youtube from '../assets/images/footer/youtube.svg';
 import Tiktok from '../assets/images/footer/tiktok.svg';
-import Aos from 'aos';
-import 'aos/dist/aos';
-import { useEffect } from 'react';
-
 const Footer = () => {
- 
-  useEffect(() => {
-    Aos.init({ once: true, duration: 1000 });
-    Aos.refresh();
-  } , []);
   return (
     <div className="footer bg-maintext">
       <div className="container max-w-[1404px] px-4 mx-auto">

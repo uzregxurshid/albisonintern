@@ -1,7 +1,5 @@
 import TeachingHero from '../assets/images/teaching/hero.png';
-import Aos from 'aos';
-import 'aos/dist/aos';
-import { useEffect } from 'react';
+
 const Teaching = () => {
   const styles= {
     teaching: "teaching bg-mainbgblack",
@@ -13,10 +11,7 @@ const Teaching = () => {
     teaching__btn: 'intro__left--button text-maintext px-6 py-4 bg-mainbggreen w-max mt-12 rounded  uppercase tracking-[1px] lg:mt-8  transition-all duration-500 hover:bg-maintextwhite hover:text-mainbggreen',
     teaching__line: 'w-[150px] h-0.5 bg-mainbggreen mt-4',
   }
-  useEffect(() => {
-    Aos.init({ once: true, duration: 1000 });
-    Aos.refresh();
-  } , []);
+
   return (
     <div className={styles.teaching}>
       <div className={styles.container}>

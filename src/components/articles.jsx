@@ -1,14 +1,8 @@
 import Article1 from '../assets/images/article/articlef.png';
 import Article2 from '../assets/images/article/articlet.png';
 import Article3 from '../assets/images/article/articleth.png';
-import Aos from 'aos';
-import 'aos/dist/aos';
-import { useEffect } from 'react';
 const Artic = () => {
-    useEffect(() => {
-    Aos.init({ once: true, duration: 1000 });
-    Aos.refresh();
-  } , []);
+
   const styles =  {
     articles: "articles bg-mainbgworkshop pb-[266px]",
     container: "container max-w-[1404px] px-4 mx-auto",

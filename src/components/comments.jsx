@@ -5,16 +5,9 @@ import "swiper/css/pagination";
 import 'swiper'
 import { Pagination } from "swiper";
 import React from 'react';
- import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
       
 const Comments = () => {
 
-   useEffect(() => {
-    Aos.init({ once: true, duration: 1000 });
-    Aos.refresh();
-  });
        
   return (
 

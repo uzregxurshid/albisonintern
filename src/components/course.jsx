@@ -1,9 +1,6 @@
-import { useEffect } from 'react';
 import CourseImg1 from '../assets/images/courses/coursef.png';
 import CourseImg2 from '../assets/images/courses/courset.png';
 import CourseImg3 from '../assets/images/courses/courseth.png';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 const Courses = () => {
   const styles =  {
     courses: "courses bg-mainbgblack",
@@ -28,10 +25,6 @@ const Courses = () => {
     courses__nextitems3: "courses__card card w-[393px] ml-12 w1320:ml-8 w1280:w-[350px] w1160:w-[320px] w1050:mt-20 w1050:w-[393px] w1050:ml-0 w425:w-[360px] w375:w-[320px]",
     course__pricewrap: 'flex mt-[15px] ',
   } 
-  useEffect(() => {
-    Aos.init({once: true, duration:1000});
-    Aos.refresh();
-  });
   return (
     <div className={styles.courses}>
       <div className={styles.container}>

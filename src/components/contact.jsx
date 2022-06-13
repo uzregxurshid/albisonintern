@@ -1,7 +1,4 @@
 import React from 'react'
-import Aos from 'aos';
-import 'aos/dist/aos';
-import { useEffect } from 'react';
 const styles = {
   contact: 'contact bg-transparent -mt-[180px] relative',
   container: 'container max-w-[1316px] px-5 mx-auto w475:p-0',
@@ -12,10 +9,6 @@ const styles = {
   contact__form: 'w475:flex w475:flex-col w475:items-center'
 }
 const Contacts = () => {
-    useEffect(() => {
-    Aos.init({ once: true, duration: 1000 });
-    Aos.refresh();
-  } , []);
   return (
     <div className={styles.contact}>
       <div className='absolute w-screen h-[176px] bg-maintext bottom-0 left-0 block -z-[1]'>sdafasd</div>

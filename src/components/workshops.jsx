@@ -1,6 +1,3 @@
- import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 const Workshops = () => {
   const styles = {
     workshops: "workshops bg-mainbgworkshop",
@@ -21,10 +18,6 @@ const Workshops = () => {
     workshops__nextitems: "workshops__card card w-[391px] ml-12 w1320:ml-8 w1280:w-[350px] w1160:w-[320px] w1050:w-[391px] w850:mt-20 w850:ml-0 w425:w-[360px] w375:w-[320px]",
     workshops__nextitems3: "workshops__card card w-[391px] ml-12 w1320:ml-8 w1280:w-[350px] w1160:w-[320px] w1050:mt-20 w1050:w-[391px] w1050:ml-0 w425:w-[360px] w375:w-[320px]",
   } 
-   useEffect(() => {
-    Aos.init({ once: true, duration: 1000 });
-    Aos.refresh();
-  });
   return (
     <div className={styles.workshops}>
       <div className={styles.container}>

@@ -1,7 +1,4 @@
 import PersonalHero from '../assets/images/personal/hero.png';
- import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 const Personal = () => {
   const styles = {
     personal: "personal bg-mainbgblack",
@@ -14,10 +11,6 @@ const Personal = () => {
     personal__line: 'w-[150px] h-0.5 bg-mainbggreen mt-4',
 
   };
-  useEffect(() => {
-    Aos.init({ once: true, duration: 1000 });
-    Aos.refresh();
-  });
   return (
     <div className={styles.personal}>
       <div className={styles.container}>

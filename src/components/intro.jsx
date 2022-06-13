@@ -1,8 +1,5 @@
 import './comp.css';
 import Hero from '../assets/images/intro/bg.png';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 const Intro = () => {
   const styles = {
     intro: "intro bg-mainbgblack bg-no-repeat",
@@ -19,10 +16,6 @@ const Intro = () => {
 
   }
   
-  useEffect(() => {
-    Aos.init({once: true, duration:1000});
-    Aos.refresh();
-  });
 
   return (
     <div className={styles.intro}>
