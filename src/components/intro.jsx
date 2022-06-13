@@ -1,6 +1,9 @@
 import './comp.css';
 import Hero from '../assets/images/intro/bg.png';
+import {gsap} from 'gsap';
+import { useEffect, useRef } from 'react';
 const Intro = () => {
+  const buttonRef = useRef(null);
   const styles = {
     intro: "intro bg-mainbgblack bg-no-repeat",
     container: "container max-w-[1308px] mx-auto",
@@ -15,6 +18,31 @@ const Intro = () => {
     intro__img: "intro__left--img mt-5 hidden  w930:block w520:w-[320px]",
 
   }
+  useEffect(() => {
+    // rotate button 360deg on scroll to bottom
+    const scrollToBottom = () => {
+      gsap.to(buttonRef.current, {
+        duration: 1,
+        rotation: 360,
+        ease: "power3.out"
+      });
+    }
+    const scrollToTop = () => {
+      gsap.to(buttonRef.current, {
+        duration: 1,
+        rotation: 0,
+        ease: "power3.out"
+      });
+    }
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > window.innerHeight) {
+        scrollToBottom();
+      } else {
+        scrollToTop();
+      }
+    }
+    );
+  });
   return (
     <div className={styles.intro}>
       <div className={styles.container}>
@@ -25,7 +53,7 @@ const Intro = () => {
             <img src={Hero} alt="hero" className={styles.intro__img} width={400} height={400} />
             <p className={styles.intro__define}>A deep-dive on the Instagram algorythm, hashtags, content strategy, and branding.</p>
             <p className={styles.intro__author}>Kathryn Murphy</p>
-            <button className={styles.intro__button}>Learn More</button>
+            <button className={styles.intro__button} ref={buttonRef}>Learn More</button>
           </div>
           <div className='intro__right w930:hidden'>
             <img src={Hero} alt="hero" className="w-[614px] h-[614px] ml-[98px] w1280:w-[500px] w1280:h-[500px]  w1160:h-[450px]  w1160:w-[450px] w1160:ml-0" width={400} height={400} />
