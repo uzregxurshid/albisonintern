@@ -99,7 +99,6 @@ const Courses = () => {
                     <a className={styles.courses__link} href="/">Learn More</a>
                   </div>
                 </div>
-
               </li>
             </ul>
           </div>

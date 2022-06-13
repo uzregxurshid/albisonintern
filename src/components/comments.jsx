@@ -1,0 +1,44 @@
+import Star from '../assets/images/comments/star.svg';
+const Comments = () => {
+  return (
+    <div className="comment bg-mainbggreen">
+      <div className="container max-w-[1061] px-5 mx-auto">
+        <div className="comment__container flex flex-col items-center justify-center pt-[82px] pb-[92px]">
+          <div className="comment__starts">
+            <ul className='flex'>
+              <li className='comment__item'>
+                <img src={Star} alt="star" />
+              </li>
+              <li className='comment__item ml-[5px]'>
+                <img src={Star} alt="star" />
+              </li>
+              <li className='comment__item ml-[5px]'>
+                <img src={Star} alt="star" />
+              </li>
+              <li className='comment__item ml-[5px]'>
+                <img src={Star} alt="star" />
+              </li>
+              <li className='comment__item ml-[5px]'>
+                <img src={Star} alt="star" />
+              </li>
+            </ul>
+          </div>
+          <div className="comment__quota text-maintext w-[1006px] text-center mt-[45px]">
+            <q className='text-[28px] leading-[42px] font-normal text-center italic'>
+              “Kate's courses are a game changer. She's thorough, organized, and explains things in a no-nonsense way that makes it easy for anyone—beginners to experts—to learn something from her courses and take their game to the next level.”
+            </q>
+          </div>
+          <div className='comment__author text-[18px] leading-[27px] mt-[37px] text-cardtexta'>
+            James Brown, Influencer
+          </div>
+          <div className='comment__navigation mt-[50px]'>
+            <button className='cursor-pointer w-[18px] h-[18px] rounded-full bg-[#222222]' type='button'></button>
+            <button className='cursor-pointer w-[18px] h-[18px] rounded-full bg-[#22222266] ml-2' type='button'></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Comments

@@ -28,7 +28,8 @@ module.exports = {
       mainbgblack: "#23233B",
       maingtextgray: "#B2B2BF",
       white: "#FFFFFF",
-      cardtexta:"#4E4E65"
+      cardtexta:"#4E4E65",
+      mainbgworkshop: "#F5F5F5"
     }
   },
   plugins: [],
