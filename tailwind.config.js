@@ -22,6 +22,8 @@ module.exports = {
       mainbggreen: "#57D9A6",
       mainbgblack: "#23233B",
       maingtextgray: "#B2B2BF",
+      white: "#FFFFFF",
+      cardtexta:"#4E4E65"
     }
   },
   plugins: [],
