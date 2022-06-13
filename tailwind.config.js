@@ -20,6 +20,7 @@ module.exports = {
       w770: { max: "750px" },
       w640: { max: "640px" },
       w520: { max: "520px" },
+      w475: { max: "475px" },
       w425: { max: "425px" },
       w375: { max: "375px" },
     },
