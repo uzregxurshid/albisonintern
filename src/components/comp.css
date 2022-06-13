@@ -1,0 +1,15 @@
+.intro{
+    background-image: url('../assets/images/intro/bg.png');
+}
+
+@media (max-width: 1024px) {
+    .intro{
+      background-size: 420px 420px;
+      background-position: right top 5rem;
+    }
+}
+@media  (max-width: 930px) {
+    .intro{
+      background-image: none;
+    }
+}

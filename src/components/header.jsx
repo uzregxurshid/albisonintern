@@ -5,7 +5,7 @@ const Header = () => {
   const styles = {
     header: "header bg-mainbgblack",
     container: "container max-w-[1308px] mx-auto",
-    header__container: "header__container flex justify-between items-center pt-[30px] pb-[31px] w1320: px-2",
+    header__container: "header__container flex justify-between items-center pt-[30px] pb-[31px] w1320:px-4  ",
     header__logo: "header__logo block",
     header__link: "header__logo-link",
     header__logo_img: "header__logo-img md:w-100",
@@ -53,10 +53,6 @@ const Header = () => {
       });
     }
   }
-
-
-
-
 
   return (
     <div className={styles.header}>
