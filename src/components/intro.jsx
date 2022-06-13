@@ -12,7 +12,7 @@ const Intro = () => {
     intro__define: "intro__left--define w520:w-[300px] w930:text-center mt-[22px] text-maintextwhite text-[22px] leading-[33px] font-normal w-[548px] lg:text-[20px] lg:mt-4",
     intro__author: "intro__left--author text-maingtextgray font-normal text-[17px] leading-[27px] mt-[22px] lg:mt-4",
     intro__button: "intro__left--button text-maintext px-6 py-4 bg-mainbggreen w-max mt-12 rounded lg:mt-10 uppercase tracking-[1px]",
-    intro__img: "intro__left--img mt-5 hidden lg:block w375:w-[320px]",
+    intro__img: "intro__left--img mt-5 hidden lg:block w520:w-[320px]",
 
   }
   return (
