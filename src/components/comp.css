@@ -19,13 +19,22 @@
   height: 18px;
   background: #222222;
   border-radius: 9px;
+  display:block;
+  position: absolute; 
+  bottom: 82px;
+  left:calc(50vw - 32px);
+  cursor:pointer;
 }
 
-.myBullet:hover {
-  background: #f5f5f5;
-}
 
-.myBullet:active {
-  background: rgba(34, 34, 34, 0.4);
+.myBulletActive{
+  width: 18px;
+  height: 18px;
+  background: #22222266;
+  border-radius: 9px;
+  display:block;
+  position: absolute; 
+  bottom: 82px;
+  left:50vw;
+  cursor:pointer;
 }
-

@@ -7,23 +7,16 @@ import { Pagination } from "swiper";
 import React from 'react';
 
 const Comments = () => {
-  const navigationPrevRef = React.useRef(null)
-  const navigationNextRef = React.useRef(null)
-  
+
   return (
 
-    
+
     <Swiper pagination={{
       clickable: true,
+      bulletClass:"myBullet",
+      bulletActiveClass:"myBulletActive",
     }} modules={[Pagination]} className="mySwiper"
-      navigation={{
-        prevEl: navigationPrevRef.current,
-        nextEl: navigationNextRef.current,
-      }}
-      onBeforeInit={(swiper) => {
-        swiper.params.navigation.prevEl = navigationPrevRef.current;
-        swiper.params.navigation.nextEl = navigationNextRef.current;
-      }}
+
     >
       <SwiperSlide><div className="comment bg-mainbggreen">
         <div className="container max-w-[1061] px-5 mx-auto">
@@ -56,8 +49,6 @@ const Comments = () => {
               James Brown, Influencer
             </div>
             <div className='comment__navigation mt-[50px] w640:mt-7'>
-              <button className='cursor-pointer w-[18px] h-[18px] rounded-full bg-[#222222]' type='button'></button>
-              <button className='cursor-pointer w-[18px] h-[18px] rounded-full bg-[#22222266] ml-2' type='button'></button>
             </div>
           </div>
         </div>
@@ -93,8 +84,6 @@ const Comments = () => {
               James Brown, Influencer
             </div>
             <div className='comment__navigation mt-[50px] w640:mt-7'>
-              <button className='cursor-pointer w-[18px] h-[18px] rounded-full bg-[#222222]' type='button'></button>
-              <button className='cursor-pointer w-[18px] h-[18px] rounded-full bg-[#22222266] ml-2' type='button'></button>
             </div>
           </div>
         </div>
