@@ -11,7 +11,7 @@ const Artic = () => {
     articles__text: "articles__text w-[644px] text-[22px] leading-[33px] text-center text-cardtexta mt-[50px] md:w-[520px] w520:text-[20px] w520:w-[425px] w425:w-[330px] w425:text-[16px] w375:w-[320px]",
     articles__button: "articles__btn text-maintext px-6 py-4 bg-mainbggreen w-max mt-12 rounded lg:mt-10 uppercase tracking-[1px] text-center",
     articles__main: "articles__main flex",
-    articles__list: "articles__list flex first:ml-0 mt-20 w1050:flex-wrap w1050:justify-center w850px:grid grid-cols-2 grid-rows-1 gap-0 w850:w-[400px] w375:w-[320px]",
+    articles__list: "articles__list flex first:ml-0 mt-20 w1050:flex-wrap w1050:justify-center w850px:grid grid-cols-2 grid-rows-1 gap-0 w850:w-[400px] w520:w-[320px]",
     articles__cardbg: "card__img w-full h-[197px]",
     articles__author: 'text-[17px] leading-[27px] font-normal not-italic mt-2 text-cardtexta',
     articles__date: 'text-[17px] leading-[27px] font-normal not-italic mb-[22px] text-cardtexta',
