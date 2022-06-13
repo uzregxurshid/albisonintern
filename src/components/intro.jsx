@@ -7,12 +7,12 @@ const Intro = () => {
     intro__container: "intro__container flex flex-row pt-[104px] pb-[137px] w1320:px-4  w930:flex-col w930:items-center md:pt-[80px] md:pb-[100px]",
     intro__left: "intro__left flex flex-col w930:items-center", 
     intro__feature: " intro__left--text w-[150px] text-maintextwhite text-base leading-[21px] border-b-mainbggreen border-b-[2px] pb-[7px] overflow-hidden uppercase text-justify tracking-[1px]",
-    intro__header: "intro__left--header w425:w-[350px] w425:text-[45px] w520:w-[400px] w930:text-center text-maintextwhite text-[55px] leading-[60px] font-bold w-[509px] mt-[59px] lg:text-[50px] lg:mt-12",
+    intro__header: "intro__left--header w425:w-[350px] w425:text-[45px] w520:w-[400px] w930:text-center text-maintextwhite text-[55px] leading-[60px] font-bold w-[509px] mt-[59px] lg:text-[50px] lg:mt-12 w375:w-[320px]",
     intro__right: "intro__right relative ml-56",
     intro__define: "intro__left--define w520:w-[300px] w930:text-center mt-[22px] text-maintextwhite text-[22px] leading-[33px] font-normal w-[548px] lg:text-[20px] lg:mt-4",
     intro__author: "intro__left--author text-maingtextgray font-normal text-[17px] leading-[27px] mt-[22px] lg:mt-4",
     intro__button: "intro__left--button text-maintext px-6 py-4 bg-mainbggreen w-max mt-12 rounded lg:mt-10 uppercase tracking-[1px]",
-    intro__img: "intro__left--img mt-5 hidden lg:block",
+    intro__img: "intro__left--img mt-5 hidden lg:block w375:w-[320px]",
 
   }
   return (

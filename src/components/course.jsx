@@ -5,23 +5,24 @@ const Courses = () => {
   const styles =  {
     courses: "courses bg-mainbgblack",
     container: "container max-w-[1404px] px-4 mx-auto",
-    courses__container: "courses__container flex flex-col items-center py-[144px]",
-    courses__header: " courses__header text-[44px] leading-[53px] font-bold text-maintextwhite text-center",
+    courses__container: "courses__container flex flex-col items-center py-[144px] md:py-[100px]",
+    courses__header: " courses__header text-[44px] leading-[53px] font-bold text-maintextwhite text-center md:text-[38px]",
     courses__line: "courses__line w-[150px] h-0.5 bg-mainbggreen mt-[17px] ",
-    courses__text: "courses__text w-[644px] text-[22px] leading-[33px] text-center text-maintextwhite mt-[50px]",
+    courses__text: "courses__text w-[644px] text-[22px] leading-[33px] text-center text-maintextwhite mt-[50px] md:w-[520px] w520:text-[20px] w520:w-[425px] w425:w-[330px] w425:text-[16px] w375:w-[320px]",
     courses__button: "courses__btn text-maintext px-6 py-4 bg-mainbggreen w-max mt-12 rounded lg:mt-10 uppercase tracking-[1px] text-center",
     courses__main: "courses__main flex",
-    courses__list: "courses__list flex first:ml-0 mt-20",
-    courses__itemf: "courses__card card w-[393px]", 
+    courses__list: "courses__list flex first:ml-0 mt-20 w1050:flex-wrap w1050:justify-center w850px:grid grid-cols-2 grid-rows-1 gap-0 w850:w-[400px] w375:w-[320px]",
     courses__cardbg: "card__img w-full h-[197px]",
     courses__author: 'text-[17px] leading-[27px] font-normal not-italic mt-2',
     course__price: 'text-[22px] leading-[27px] text-maingtextgray font-normal not-italic',
     courses__newprice: "text-[22px] leading-[27px] text-maintext font-normal not-italic ml-2",
     courses__link: 'text-[16px] leading-[21px] text-mainbggreen tracking-[1px] uppercase not-italic font-normal',
     courses__theme: 'card__body--text text-[24px] leading-[29px] text-maintext font-normal w-[313px]',
-    courses__cardbody: 'card__body bg-white pl-6 pt-[22px] pb-[30px]',
     cours__fprice: 'text-[22px] leading-[27px] text-maintext font-normal not-italic mt-[15px]',
-    courses__nextitems: "courses__card card w-[393px] ml-12",
+    courses__cardbody: 'card__body bg-white pl-6 pt-[22px] pb-[30px] w1160:pl-5 w1050:pl-6 overflow-hidden',
+    courses__itemf: "courses__card card w-[393px] w1280:w-[350px] w1160:w-[320px] w1050:w-[393px] w425:w-[360px] w375:w-[320px]", 
+    courses__nextitems: "courses__card card w-[393px] ml-12 w1320:ml-8 w1280:w-[350px] w1160:w-[320px] w1050:w-[393px] w850:mt-20 w850:ml-0 w425:w-[360px] w375:w-[320px]",
+    courses__nextitems3: "courses__card card w-[393px] ml-12 w1320:ml-8 w1280:w-[350px] w1160:w-[320px] w1050:mt-20 w1050:w-[393px] w1050:ml-0 w425:w-[360px] w375:w-[320px]",
     course__pricewrap: 'flex mt-[15px] ',
   } 
   return (
@@ -78,7 +79,7 @@ const Courses = () => {
                 </div>
 
               </li>
-              <li className={styles.courses__nextitems}>
+              <li className={styles.courses__nextitems3}>
                 <div className={styles.courses__cardbg} style={
                   {
                     backgroundImage: `url(${CourseImg3})`
