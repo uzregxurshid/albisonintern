@@ -1,6 +1,6 @@
 import React from 'react'
 const styles = {
-  contact: 'contact bg-transparent -mt-20',
+  contact: 'contact bg-transparent -mt-[180px] relative',
   container: 'container max-w-[1316px] px-5 mx-auto w475:p-0',
   contact__container: 'contact__container bg-mainbggreen flex flex-col items-center  pt-[78px] pb-[95px] md:px-2 sm:py-14 w475:w-screen',
   contact__header: 'contact__header text-[44px] leading-[53px] font-bold text-maintext text-center not-italic md:text-[38px]',
@@ -11,6 +11,7 @@ const styles = {
 const Contacts = () => {
   return (
     <div className={styles.contact}>
+      <div className='absolute w-screen h-[176px] bg-maintext bottom-0 left-0 block -z-[1]'>sdafasd</div>
       <div className={styles.container}>
         <div className={styles.contact__container}>
           <h2 className={styles.contact__header}>You have the power to define your future.</h2>

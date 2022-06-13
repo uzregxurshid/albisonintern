@@ -3,9 +3,9 @@ import Article2 from '../assets/images/article/articlet.png';
 import Article3 from '../assets/images/article/articleth.png';
 const Artic = () => {
   const styles =  {
-    articles: "articles bg-mainbgworkshop",
+    articles: "articles bg-mainbgworkshop pb-[266px]",
     container: "container max-w-[1404px] px-4 mx-auto",
-    articles__container: "articles__container flex flex-col items-center pt-[142px] pb-[146px] md:py-[100px]",
+    articles__container: "articles__container flex flex-col items-center pt-[142px] md:py-[100px]",
     articles__header: " articles__header text-[44px] leading-[53px] font-bold text-maintext text-center md:text-[38px]",
     articles__line: "articles__line w-[150px] h-0.5 bg-mainbggreen mt-[17px] ",
     articles__text: "articles__text w-[644px] text-[22px] leading-[33px] text-center text-cardtexta mt-[50px] md:w-[520px] w520:text-[20px] w520:w-[425px] w425:w-[330px] w425:text-[16px] w375:w-[320px]",
