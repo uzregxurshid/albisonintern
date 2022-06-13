@@ -23,15 +23,15 @@ const Comments = () => {
               </li>
             </ul>
           </div>
-          <div className="comment__quota text-maintext w-[1006px] text-center mt-[45px]">
-            <q className='text-[28px] leading-[42px] font-normal text-center italic'>
-              “Kate's courses are a game changer. She's thorough, organized, and explains things in a no-nonsense way that makes it easy for anyone—beginners to experts—to learn something from her courses and take their game to the next level.”
+          <div className="comment__quota text-maintext w-[1006px] text-center mt-[45px] lg:w-[860px] w880:w-[760px] w850:w-[700px] w770:w-[600px] w640:w-[425px] w520:w-[375px] w375:w-auto">
+            <q className='text-[28px] leading-[42px] font-normal text-center italic w930:text-[25px] w850:text-[23px] w520:text-xl'>
+              Kate's courses are a game changer. She's thorough, organized, and explains things in a no-nonsense way that makes it easy for anyone—beginners to experts—to learn something from her courses and take their game to the next level.
             </q>
           </div>
           <div className='comment__author text-[18px] leading-[27px] mt-[37px] text-cardtexta'>
             James Brown, Influencer
           </div>
-          <div className='comment__navigation mt-[50px]'>
+          <div className='comment__navigation mt-[50px] w640:mt-7'>
             <button className='cursor-pointer w-[18px] h-[18px] rounded-full bg-[#222222]' type='button'></button>
             <button className='cursor-pointer w-[18px] h-[18px] rounded-full bg-[#22222266] ml-2' type='button'></button>
           </div>
