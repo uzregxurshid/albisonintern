@@ -4,6 +4,7 @@ import Header from "../components/header"
 import Intro from "../components/intro"
 import Personal from "../components/personal"
 import Suggest from "../components/suggest"
+import Teaching from "../components/teaching"
 import Workshops from "../components/workshops"
 const Main = () => {
   return (
@@ -15,6 +16,7 @@ const Main = () => {
     <Personal/>
     <Workshops/>
     <Comments/>
+    <Teaching/>
     </>
   )
 }
