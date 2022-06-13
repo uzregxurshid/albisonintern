@@ -8,7 +8,7 @@ const Intro = () => {
     intro: "intro bg-mainbgblack bg-no-repeat",
     container: "container max-w-[1308px] mx-auto",
     intro__container: "intro__container flex flex-row pt-[104px] pb-[137px] w1320:px-4  w930:flex-col w930:items-center md:pt-[80px] md:pb-[100px]",
-    intro__left: "intro__left flex flex-col w930:items-center",
+    intro__left: "intro__left flex flex-col w930:items-center w640:w-[520px]",
     intro__feature: " intro__left--text w-[150px] text-maintextwhite text-base leading-[21px] border-b-mainbggreen border-b-[2px] pb-[7px] overflow-hidden uppercase text-justify tracking-[1px]",
     intro__header: "intro__left--header w425:w-[350px] w425:text-[45px] w520:w-[400px] w930:text-center text-maintextwhite text-[55px] leading-[60px] font-bold w-[509px] mt-[59px] lg:text-[50px] lg:mt-12 w375:w-[320px]",
     intro__right: "intro__right relative ml-56",
