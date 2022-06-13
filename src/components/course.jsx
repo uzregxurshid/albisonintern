@@ -1,6 +1,9 @@
+import { useEffect } from 'react';
 import CourseImg1 from '../assets/images/courses/coursef.png';
 import CourseImg2 from '../assets/images/courses/courset.png';
 import CourseImg3 from '../assets/images/courses/courseth.png';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 const Courses = () => {
   const styles =  {
     courses: "courses bg-mainbgblack",
@@ -9,7 +12,7 @@ const Courses = () => {
     courses__header: " courses__header text-[44px] leading-[53px] font-bold text-maintextwhite text-center md:text-[38px]",
     courses__line: "courses__line w-[150px] h-0.5 bg-mainbggreen mt-[17px] ",
     courses__text: "courses__text w-[644px] text-[22px] leading-[33px] text-center text-maintextwhite mt-[50px] md:w-[520px] w520:text-[20px] w520:w-[425px] w425:w-[330px] w425:text-[16px] w375:w-[320px]",
-    courses__button: "courses__btn text-maintext px-6 py-4 bg-mainbggreen w-max mt-12 rounded lg:mt-10 uppercase tracking-[1px] text-center",
+    courses__button: "courses__btn text-maintext px-6 py-4 bg-mainbggreen w-max mt-12 rounded lg:mt-10 uppercase tracking-[1px] text-center  transition-all duration-500 hover:bg-maintextwhite hover:text-mainbggreen",
     courses__main: "courses__main flex",
     courses__list: "courses__list flex first:ml-0 mt-20 w1050:flex-wrap w1050:justify-center w850px:grid grid-cols-2 grid-rows-1 gap-0 w850:w-[400px] w520:w-[320px]",
     courses__cardbg: "card__img w-full h-[197px]",
@@ -25,20 +28,24 @@ const Courses = () => {
     courses__nextitems3: "courses__card card w-[393px] ml-12 w1320:ml-8 w1280:w-[350px] w1160:w-[320px] w1050:mt-20 w1050:w-[393px] w1050:ml-0 w425:w-[360px] w375:w-[320px]",
     course__pricewrap: 'flex mt-[15px] ',
   } 
+  useEffect(() => {
+    Aos.init({once: true, duration:1000});
+    Aos.refresh();
+  });
   return (
     <div className={styles.courses}>
       <div className={styles.container}>
         <div className={styles.courses__container}>
-          <h2 className={styles.courses__header}>Featured Courses</h2>
-          <div className={styles.courses__line}></div>
-          <p className={styles.courses__text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-          <button className={styles.courses__button} type="button">
+          <h2 className={styles.courses__header} data-aos="fade-up">Featured Courses</h2>
+          <div className={styles.courses__line} data-aos="fade-up"></div>
+          <p className={styles.courses__text} data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+          <button className={styles.courses__button} type="button" data-aos="fade-up">
             View All Courses
           </button>
 
           <div className={styles.courses__main}>
             <ul className={styles.courses__list}>
-              <li className={styles.courses__itemf}>
+              <li className={styles.courses__itemf} data-aos="fade-up">
                 <div className={styles.courses__cardbg} style={
                   {
                     backgroundImage: `url(${CourseImg1})`
@@ -57,7 +64,7 @@ const Courses = () => {
                 </div>
 
               </li>
-              <li className={styles.courses__nextitems}>
+              <li className={styles.courses__nextitems} data-aos="fade-up">
                 <div className={styles.courses__cardbg} style={
                   {
                     backgroundImage: `url(${CourseImg2})`
@@ -79,7 +86,7 @@ const Courses = () => {
                 </div>
 
               </li>
-              <li className={styles.courses__nextitems3}>
+              <li className={styles.courses__nextitems3} data-aos="fade-up">
                 <div className={styles.courses__cardbg} style={
                   {
                     backgroundImage: `url(${CourseImg3})`

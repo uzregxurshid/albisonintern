@@ -12,7 +12,7 @@ const Header = () => {
     header__nav: "header__nav block md:hidden md:w-screen md:h-screen md:bg-mainbgblack md:absolute md:top-0 md:left-0 md:flex md:pt-40 md:justify-center  md:z-[20]",
     header__nav_list: "header__nav-list flex text-maintextwhite font-normal text-[17px] leading-[27px] first:ml-0 md:flex-col",
     header__nav_item: "header__nav-item ml-10 md:text-center md:ml-0",
-    header__nav_link: "header__nav-link",
+    header__nav_link: "header__nav-link hover:text-mainbggreen transition    duration-500",
     header__btn: "header__btn relative",
     header__btn_img: "header__btn-img",
     header__btn_badge: "header__btn-badge w-[18px] h-[18px] rounded-full bg-[#FC5468] absolute flex items-center justify-center text-[11px] leading-[18px] font-normal text-[#fff] top-[-4px] right-[-4px]",

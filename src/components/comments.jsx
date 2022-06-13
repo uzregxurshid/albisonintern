@@ -5,9 +5,17 @@ import "swiper/css/pagination";
 import 'swiper'
 import { Pagination } from "swiper";
 import React from 'react';
-
+ import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+      
 const Comments = () => {
 
+   useEffect(() => {
+    Aos.init({ once: true, duration: 1000 });
+    Aos.refresh();
+  });
+       
   return (
 
 
@@ -18,7 +26,7 @@ const Comments = () => {
     }} modules={[Pagination]} className="mySwiper"
 
     >
-      <SwiperSlide><div className="comment bg-mainbggreen">
+      <SwiperSlide><div className="comment bg-mainbggreen" data-aos="fade-right">
         <div className="container max-w-[1061] px-5 mx-auto">
           <div className="comment__container flex flex-col items-center justify-center pt-[82px] pb-[92px]">
             <div className="comment__starts">
@@ -53,7 +61,7 @@ const Comments = () => {
           </div>
         </div>
       </div></SwiperSlide>
-      <SwiperSlide><div className="comment bg-mainbggreen">
+      <SwiperSlide><div className="comment bg-mainbggreen" data-aos="fade-right">
         <div className="container max-w-[1061] px-5 mx-auto">
           <div className="comment__container flex flex-col items-center justify-center pt-[82px] pb-[92px]">
             <div className="comment__starts">
