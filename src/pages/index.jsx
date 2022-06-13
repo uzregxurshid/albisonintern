@@ -1,5 +1,6 @@
 import Artic from "../components/articles"
 import Comments from "../components/comments"
+import Contacts from "../components/contact"
 import Courses from "../components/course"
 import Header from "../components/header"
 import Intro from "../components/intro"
@@ -19,6 +20,7 @@ const Main = () => {
     <Comments/>
     <Teaching/>
     <Artic/>
+    <Contacts/>
     </>
   )
 }

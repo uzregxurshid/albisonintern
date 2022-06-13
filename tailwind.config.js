@@ -31,7 +31,8 @@ module.exports = {
       maingtextgray: "#B2B2BF",
       white: "#FFFFFF",
       cardtexta:"#4E4E65",
-      mainbgworkshop: "#F5F5F5"
+      mainbgworkshop: "#F5F5F5",
+      transparent: "transparent",
     }
   },
   plugins: [],
